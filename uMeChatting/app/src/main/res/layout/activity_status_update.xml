@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSetting.StatusUpdateActivity">
+
+    <include layout="@layout/all_app_bar_layout"
+        android:id="@+id/update_status_appbar"/>
+
+    <EditText
+        android:id="@+id/input_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="185dp"
+        android:ems="10"
+        android:hint="Update your status..."
+        android:inputType="textMultiLine"
+        android:padding="30dp" />
+
+
+</RelativeLayout>

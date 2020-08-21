@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "399525017262",
+    "firebase_url": "https://umechatting.firebaseio.com",
+    "project_id": "umechatting",
+    "storage_bucket": "umechatting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399525017262:android:123c3d89a338cfce",
+        "android_client_info": {
+          "package_name": "com.example.umechatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399525017262-vvfu2te0ofbh5jh153tq2sbamqpjttf8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.umechatting",
+            "certificate_hash": "8290c4c00b99de53b1b2535116ff87d2a6d8bffc"
+          }
+        },
+        {
+          "client_id": "399525017262-ie21ocsb1uenkdti22j09gij4dp8mpmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_A4aws9WKyQQAKh99sK5rc2sPJUF51ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399525017262-ie21ocsb1uenkdti22j09gij4dp8mpmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

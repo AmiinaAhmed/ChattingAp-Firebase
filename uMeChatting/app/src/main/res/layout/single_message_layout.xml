@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="4dp">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/messageImageVreceiver"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="08dp"
+        android:layout_marginStart="51dp"
+        app:riv_corner_radius="15dp"
+        app:riv_border_width="0.5dip"
+        />
+    <VideoView
+        android:id="@+id/sender_message_video"
+        android:layout_width="210dp"
+        android:layout_height="150dp"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:layout_toEndOf="@+id/messageImageVreceiver"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/messageUserImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="05dp"
+        android:layout_marginStart="1dp"
+        android:src="@drawable/default_profile_image"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="0.40dp" />
+
+    <TextView
+        android:id="@+id/receiverMessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="08dp"
+        android:layout_marginStart="51dp"
+        android:background="@drawable/single_message_text_background"
+        android:padding="8dp"
+        android:text="From Receiver"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/senderMessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="08dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/single_message_text_another_background"
+        android:padding="8dp"
+        android:text="From Sender"
+        android:textColor="@color/black" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/messageImageVsender"
+        android:layout_marginTop="08dp"
+        android:layout_marginEnd="1dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:riv_corner_radius="15dp"
+        app:riv_border_width="0.5dip"
+        />
+    android:layout_toEndOf="@+id/message_profile_image"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="08dp"
+        android:layout_marginEnd="1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+
+        <SeekBar
+            android:id="@+id/receiver_message_record"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:padding="15dp"/>
+
+
+        <ImageButton
+            android:id="@+id/receiver_control"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_stop"/>
+    </LinearLayout>
+    <VideoView
+        android:id="@+id/receiver_message_video"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="08dp"
+        android:layout_marginStart="51dp"
+
+       />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="08dp"
+        android:layout_marginStart="51dp">
+        <SeekBar
+            android:id="@+id/sender_message_record"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:padding="11dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toEndOf="@+id/message_profile_image"/>
+        <ImageButton
+            android:id="@+id/sender_control"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/sender_message_record"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_stop"/>
+    </LinearLayout>
+</RelativeLayout>

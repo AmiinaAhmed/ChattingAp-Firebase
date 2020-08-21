@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+    <item
+        android:title="Image"
+        android:id="@+id/Image_Mssg"/>
+
+    <item
+        android:title="Video"
+        android:id="@+id/Video_mssg"/>
+
+    <item
+        android:title="PFD File"
+        android:id="@+id/Pdf_file"/>
+
+    <item
+        android:title="Text File"
+        android:id="@+id/txt_File"/>
+
+    <item
+        android:title="Camara"
+        android:id="@+id/Camara_mssg"
+
+        />
+    <item
+        android:title="Share Location"
+        android:id="@+id/share_loc"
+
+        />
+</menu>
